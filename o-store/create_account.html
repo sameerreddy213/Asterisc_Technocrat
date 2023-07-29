@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+  
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Boy’s T-Shirt - STORE</title>
+    <style>
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+        }
+
+        img#logo1 {
+            width: 200px;
+            height: auto;
+            margin: 0 auto 50px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            display: block;
+            width: 300px;
+            height: 40px;
+            padding: 20px;
+            border-radius: 5px;
+            background: #fff;
+            border: none;
+            outline: none;
+            margin: 20px 0;
+            text-transform: capitalize;
+            color: #383838;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+        }
+
+        ::placeholder {
+            color: #383838;
+        }
+
+        .submit-btn {
+            width: 300px;
+            height: 40px;
+            text-align: center;
+            background: #383838;
+            color: #fff;
+            border-radius: 2px;
+            text-transform: capitalize;
+            border: none;
+            cursor: pointer;
+            margin: 30px 0;
+            display: block;
+        }
+
+        .checkbox {
+            /* -webkit-appearance: none ; */
+            position: relative;
+            width: 15px;
+            height: 15px;
+            border-radius: 2px;
+            background: #fff;
+            border: 1px solid #383838;
+            cursor: pointer;
+        }
+
+        .checkbox:checked {
+            background: #383838;
+        }
+
+        .checkbox::after {
+            content: '';
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50% -50%);
+            width: 80%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url(./images/check.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+        }
+
+        .checkbox:checked::after {
+            display: block;
+        }
+
+        label {
+            text-transform: capitalize;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #383838;
+        }
+
+        label a {
+            color: #383838;
+            text-decoration: underline;
+        }
+
+        .link {
+            color: #383838;
+            text-transform: capitalize;
+            text-align: center;
+            display: block;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div class="account">
+        <img src="images/logo/nexgenstore-high-resolution-logo-black-on-transparent-background.png" alt="" id="logo1">
+        <div>
+            <input type="text" id="name" placeholder="name">
+            <input type="email" id="email" placeholder="email">
+            <input type="password" id="password" placeholder="password">
+            <input type="text" id="number" placeholder="number">
+            <input type="checkbox" class="checkbox" id="terms-and-cond">
+            <label for="terms-and-cond">Agree To Our <a href="">Terms And Conditions</a></label>
+            <br>
+            <input type="checkbox" class="checkbox" id="notification">
+            <label for="notification">recieve upcoming offers and events mails
+            </label>
+            <button class="submit-btn">Create Account</button>
+        </div>
+        <a href="account.html" class="link">already have an account? Log in here</a>
+    </div>
+</body>
+
+</html>
