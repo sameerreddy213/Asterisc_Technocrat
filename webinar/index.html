@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Join our Webinar!</h1>
+        <p>Allows for a more personalized learning experience</p>
+    </header>
+
+    <main>
+        <section id="webinar-details">
+            <h2>Webinar Details</h2>
+            <div class="tab4">
+                <p>Date: <span id="date">March 10, 2023</span></p>
+                <p>Time: <span id="time">3:00 PM (GMT)</span></p>
+                <p>Duration: <span id="duration">1 hour 30 minutes</span></p>
+            </div>
+        </section>
+        <section class="agenda-speaker-info">
+            <h2>Agenda and Speaker Information</h2>
+            <p>Agenda: Web Development</p>
+            <ul>
+              <li>Topic 1: Free Full Stack Web Development Webinars</li>
+            </ul>
+          
+            <p>Speaker Information:</p>
+            <ul>
+              <li>Speaker 1: Chandrakant Bobade</li>
+              <li>Speaker 2: Pooja Sao</li>
+            </ul>
+          </section>
+          
+        <section id="registration-form">
+            <h2>Register Now</h2>
+            <form onsubmit="registerWebinar(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
